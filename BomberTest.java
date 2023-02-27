@@ -1,12 +1,12 @@
 class BomberTest {
 
     private static String aircraftModel = "North American B-25";
-    private static String fuelUp = "1000";
-    private static String fly = "1300";
-    private static String carryOrdinance = "3000";
-    private static int displayFuel;
-    private static int fuelLevel;
-    // public static int display = displayFuel + fuelLevel;
+    private static int fuelUp = 1000;
+    private static int fly = 1300;
+    private static int carryOrdinance = 3000;
+    public static int displayFuel;
+    private static int fuelLevel = (fuelUp - 615);
+    // public static int display = displayFuel - fuelLevel;
 
     public static void main(String[] args) {
 
@@ -14,8 +14,16 @@ class BomberTest {
 
         System.out.println(mission);
         
-        String display = Aircraft.bomberMission(displayFuel + fuelLevel);
+        int displayFuel = (fuelLevel);
 
-        System.out.println(display);
+        System.out.println("Total fuel consumption: " + displayFuel + " US Gallons.");
+
+        int ordinanceDropped = (carryOrdinance);
+
+        System.out.println("Total ordinance dropped: " + (ordinanceDropped - 1500) + " lbs.");
+
+        int distanceFlown = (fly);
+
+        System.out.println("Total distance flown: " + (distanceFlown - 975) + " Nautical miles.");
     }
 }

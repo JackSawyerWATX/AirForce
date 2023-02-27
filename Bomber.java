@@ -11,7 +11,7 @@ class Bomber extends Aircraft{
     // carryOrdinance() method should print out a message indicating that the bomber
     // has dropped ordinance, as well as decrease the fuel level by 5.
 
-    public static String bomberMission(String aircraftModel, String carryOrdinance, String fuelUp, String fly) {
+    public static String bomberMission(String aircraftModel, int carryOrdinance, int fuelUp, int fly) {
         return aircraftModel + " carrying " + carryOrdinance + " lbs. of ordinance, with " + fuelUp + " US Gallons of fuel set to fly " + fly + " Nautical miles.";
     }
 
