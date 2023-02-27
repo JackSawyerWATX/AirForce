@@ -1,12 +1,12 @@
-class Bomber {
+class Bomber extends Aircraft{
 
-    // Create a separate class Bomber that can carryOrdinance(), fuelUp(), and
-    // fly().
+    // Create a separate class Bomber that can carryOrdinance(), fuelUp(), and fly().
 
     private String AircraftModel;
     private String CarryOrdinance;
     private String FuelUp;
     private String FlyMission;
+    private String fuelLevel;
 
     // carryOrdinance() method should print out a message indicating that the bomber
     // has dropped ordinance, as well as decrease the fuel level by 5.
@@ -60,5 +60,13 @@ class Bomber {
 
     public void setFly(String flyMission) {
         FlyMission = flyMission;
+    }
+
+    public String getFuelLevel() {
+        return fuelLevel;
+    }
+
+    public void setFuelLevel(String FuelLevel) {
+        FuelLevel = fuelLevel;
     }
 }
