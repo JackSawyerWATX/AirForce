@@ -1,11 +1,11 @@
-● Create a Aircraft class that has a fuelLevel() and displayFuel() method. The displayFuel() method should show the aircraft's fuel level as well as return it.
+● Create a Aircraft class that has a fuelLevel() and displayFuel() method. The displayFuel() method should show the aircraft's new fuel level as well as return it.
 
-● Create a separate class Bomber that can carryOrdinance(), fuelUp(), and fly().
+● Create a separate class Bomber that can ordinanceDropped(), displayFuel(), and distanceFlown().
 
-● For the carryOrdinance() method, have it print out a message indicating that the bomber has dropped ordinance, as well as decrease the fuel level by 5.
+● For the ordinanceDropped() method, print out a message indicating that the bomber has dropped ordinance, as well as decrease the fuel level.
 
-● For the fuelUp() method, have it print out a message indicating the bomber's fuel capacity and increase its fuel level by 10.
+● For the displayFuel() method, print out a message indicating how much fuel the bomber has used.
 
-● For the fly() method, have it print out a message indicating the bomber has flown a mission and decrease its fuel level by 10.
+● For the distanceFlown() method, print out a message indicating how far the airplane has flown.
 
-● Create a BomberTest class to instantiate a bomber and have it drop three things, fuel up twice, and fly once.
+● Create a BomberTest class to instantiate a bomber and display the distance flown, ordinance dropped, and fuel used.
